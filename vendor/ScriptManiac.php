@@ -27,7 +27,7 @@ class ScriptManiac
         // do stuff
     }
 
-    public static function zimpInstaller(Event $event)
+    public static function zipInstaller(Event $event)
     {
         // make cache toasty
     }

@@ -13,5 +13,11 @@
     "require": {
         "php": ">=7.3"
     },
-    "license": "MIT"
+    "license": "MIT",
+     "scripts": {
+        "post-install-cmd": [
+            "Radus28\\ScriptManiac::zipInstaller"
+        ]
+ 
+    }
 }
