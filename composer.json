@@ -1,0 +1,17 @@
+{
+    "name": "radus28/vtiger-module-creator",
+    "description": "A quick solution for creating custom modules in Vtiger CRM",
+    "homepage": "https://gitlab.com/radus28/darko",
+    "authors": [
+        {
+            "name": "Sutharsan Jeganathan",
+            "email": "sutharsan@radus28.com",
+            "homepage": "http://radus28.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3"
+    },
+    "license": "MIT"
+}
