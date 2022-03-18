@@ -14,10 +14,14 @@
         "php": ">=7.3"
     },
     "license": "MIT",
-     "scripts": {
+    "scripts": {
         "post-install-cmd": [
             "Radus28\\ScriptManiac::zipInstaller"
         ]
- 
+    },
+    "autoload": {
+        "psr-4": {
+            "Radus28\\": "src/"
+        }
     }
 }

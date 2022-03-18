@@ -1,12 +1,13 @@
 <?php
 
-namespace Radus28\Darko;
+namespace Radus28;
 
 use Composer\Script\Event;
 use Composer\Installer\PackageEvent;
 
 class ScriptManiac
 {
+
     public static function postUpdate(Event $event)
     {
         $composer = $event->getComposer();
@@ -29,7 +30,18 @@ class ScriptManiac
 
     public static function zipInstaller(Event $event)
     {
-        // make cache toasty
+//        $eventName = $event->getName();
+        $pathDir = 'cdn/module';
+        $zipArchive = new ZipArchive;
+        if ($zipArchive->open('intaller.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE)) {
+            $dir = opendir($pathDir);
+            while ($file = readdir($dir)) {
+                if (is_file($pathDir . $file)) {
+                    $zipArchive->addFile($pathDir . $file, $file);
+                }
+            }
+            $zipArchive->close();
+        }
     }
-}
 
+}
