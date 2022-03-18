@@ -16,12 +16,14 @@
     "license": "MIT",
     "scripts": {
         "post-install-cmd": [
-            "Radus28\\ScriptManiac::zipInstaller"
-        ]
+            "zip -r installer.zip cdn/module/",
+            "cd .. && git clone https://code.vtiger.com/vtiger/vtigercrm.git"
+        ]   
     },
     "autoload": {
         "psr-4": {
             "Radus28\\": "src/"
         }
     }
+
 }

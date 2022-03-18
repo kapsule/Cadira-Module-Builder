@@ -28,11 +28,15 @@ class ScriptManiac
         // do stuff
     }
 
+    /**
+     * @internal description for manual execution such as composer run-script post-install-cmd.
+     * @depends php cli enabled with zip
+     * @param Event $event
+     */
     public static function zipInstaller(Event $event)
     {
-//        $eventName = $event->getName();
         $pathDir = 'cdn/module';
-        $zipArchive = new ZipArchive;
+        $zipArchive = new \ZipArchive();
         if ($zipArchive->open('intaller.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE)) {
             $dir = opendir($pathDir);
             while ($file = readdir($dir)) {
