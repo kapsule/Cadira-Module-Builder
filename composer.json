@@ -11,13 +11,13 @@
         }
     ],
     "require": {
-        "php": ">=7.3"
+        "php": ">=7.3",
+        "phpmd/phpmd" : "@stable"
     },
     "license": "MIT",
     "scripts": {
         "post-install-cmd": [
-            "zip -r installer.zip cdn/module/",
-            "cd .. && git clone https://code.vtiger.com/vtiger/vtigercrm.git"
+            "scripts.sh"
         ]   
     },
     "autoload": {
