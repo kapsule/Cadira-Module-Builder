@@ -38,7 +38,7 @@ Run ` composer update `
 
           `vendor/squizlabs/php_codesniffer/bin/phpcs src/ScriptManiac.php`
 
-     OR
+          OR
 
           `vendor/squizlabs/php_codesniffer/bin/phpcs --standard=/dev/phpcs/ruleset.xml src/ScriptManiac.php`
 
