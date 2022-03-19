@@ -18,4 +18,3 @@ else
    echo "vtigercrm exists"
    cd vtigercrm && git pull
 fi
-
