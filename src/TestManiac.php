@@ -5,7 +5,7 @@ namespace Radus28;
 use Composer\Script\Event;
 use Composer\Installer\PackageEvent;
 
-class ScriptManiac
+class TestManiac
 {
 
     public static function postUpdate(Event $event)
